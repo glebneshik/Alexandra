@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сухова Диана ЗСД-11</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e5799, #207cca);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 1.8em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .student-profile {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .student-photo {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        
+        .student-info {
+            padding: 20px;
+        }
+        
+        .achievements {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .achievement-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #1e5799;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #333;
+            color: white;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e5799, #207cca);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (min-width: 600px) {
+            .student-profile {
+                flex-direction: row;
+            }
+            
+            .student-photo {
+                width: 250px;
+                height: 350px;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .student-photo {
+                width: 300px;
+                height: 400px;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .student-info {
+                padding: 30px;
+            }
+            
+            .achievements {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="student-profile">
+            <img src="./image/photo_2025-02-20_16-44-20.jpg" alt="Диана Сухова" class="student-photo">
+            <div class="student-info">
+                <h2>О себе</h2>
+                <p>Меня зовут Диана, мне 17 лет. Я учусь в Бист зсд-11</p>
+                <p>С детства увлекаюсь спортом, особенно баскетболом. С 5 класса состою в школьной баскетбольной команде, а с прошлого года являюсь ее капитаном.</p>
+                <p>Кроме спорта, интересуюсь информатикой и физикой. Мечтаю поступить в технический университет и связать свою жизнь с IT-технологиями.</p>
+                
+                <h3>Мои увлечения:</h3>
+                <ul>
+                    <li>Баскетбол</li>
+                    <li>Программирование на Python</li>
+                    <li>Фотография</li>
+                    <li>Шахматы</li>
+                </ul>
+                
+                <a href="index.html" class="btn">На главную</a>
+            </div>
+        </div>
+        
+        <div class="achievements">
+            <h2>Мои достижения</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>Спортивные</h3>
+                    <p>3 место в городских соревнованиях по баскетболу (2022, 2023)</p>
+                    <p>Лучший игрок школьной лиги (2023)</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>Учебные</h3>
+                    <p>Призер олимпиады по физике (2022)</p>
+                    <p>Победитель школьного конкурса IT-проектов (2023)</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>Другие</h3>
+                    <p>Организатор благотворительного матча (2023)</p>
+                    <p>Волонтер года в школе (2022)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Группа "ИСД-11" Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

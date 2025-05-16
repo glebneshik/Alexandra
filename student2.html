@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исмуханова Дарина ЗСД-11</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #d4145a, #fbb03b);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 1.8em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .student-profile {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .student-photo {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        
+        .student-info {
+            padding: 20px;
+        }
+        
+        .achievements {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .achievement-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #d4145a;
+        }
+        
+        .poem {
+            background-color: #fffaf0;
+            padding: 15px;
+            border-left: 4px solid #fbb03b;
+            margin: 15px 0;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #333;
+            color: white;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4145a, #fbb03b);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (min-width: 600px) {
+            .student-profile {
+                flex-direction: row;
+            }
+            
+            .student-photo {
+                width: 250px;
+                height: 350px;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .poem {
+                padding: 20px;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .student-photo {
+                width: 300px;
+                height: 400px;
+            }
+            
+            .student-info {
+                padding: 30px;
+            }
+            
+            .achievements {
+                padding: 30px;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .poem {
+                font-size: 1em;
+                padding: 25px;
+            }
+        }
+        
+        @media (hover: hover) {
+            .btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+            
+            .back-link:hover {
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body>    
+    <div class="container">
+        <div class="student-profile">
+            <img src="./image/photo_2024-12-30_12-44-09.jpg" alt="Дарина Исмурзина" class="student-photo">
+            <div class="student-info">
+                <h2>О себе</h2>
+                <p>Меня зовут Дарина, мне 17 лет. Я учусь в Бист зсд-11</p>
+                <p>С детства люблю читать и писать. Мои любимые предметы — литература и русский язык. Участвую в олимпиадах по этим предметам и занимаю призовые места.</p>
+                <p>Пишу стихи и рассказы, некоторые из них публиковались в школьном литературном альманахе. Мечтаю стать журналистом или писателем.</p>
+                
+                <div class="poem">
+                    <h3>Мое стихотворение</h3>
+                    <p>Осенний лист, кружась, летит,<br>
+                    Как память о прошедшем лете.<br>
+                    И солнце золотит гранит,<br>
+                    И ветер шепчет что-то в свете...</p>
+                </div>
+                
+                <h3>Мои увлечения:</h3>
+                <ul>
+                    <li>Литература и поэзия</li>
+                    <li>Журналистика (редактор школьной газеты)</li>
+                    <li>Фотография</li>
+                    <li>Игра на гитаре</li>
+                </ul>
+                
+                <a href="index.html" class="btn">На главную</a>
+            </div>
+        </div>
+        
+        <div class="achievements">
+            <h2>Мои достижения</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>Литературные</h3>
+                    <p>1 место в областной олимпиаде по литературе (2023)</p>
+                    <p>Публикации в школьном альманахе (2021-2023)</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>Учебные</h3>
+                    <p>Призер олимпиады по русскому языку (2022, 2023)</p>
+                    <p>Лучшее сочинение года (2023)</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>Другие</h3>
+                    <p>Главный редактор школьной газеты (2022-2023)</p>
+                    <p>Организатор литературного клуба</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Группа "ИСД-11" Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
